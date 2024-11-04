@@ -16,6 +16,7 @@ public class Main {
         myFamily.add( new Person("Zephaniah", "Hughes", 9) );
         myFamily.add( new Person("Ezra", "Aiden", 17) );
 
+        System.out.println("Before sorting:");
         for(Person person: myFamily){
             System.out.println(person.getLastName() + ", " + person.getFirstName());
         }
@@ -24,7 +25,7 @@ public class Main {
 
         System.out.println("\nAfter sorting: ");
         for(Person person: myFamily){
-            System.out.println(person.getLastName() + ", " + person.getFirstName());
+            System.out.println(person);
         }
 
     }

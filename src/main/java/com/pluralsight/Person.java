@@ -21,6 +21,11 @@ public class Person implements Comparable <Person> {
         return last == 0 ? this.firstName.compareTo(o.firstName) : last;
     }
 
+    @Override
+    public String toString(){
+        return this.lastName + ", " + this.firstName;
+    }
+
     // Getters and Setters
     public String getFirstName() {
         return firstName;
